@@ -270,4 +270,5 @@ rm -rf $HOME/.kube
 #### In case you prefer scheduling user pod on master node
 ```
 kubectl taint node master node-role.kubernetes.io/master:NoSchedule-
+kubectl taint node master node-role.kubernetes.io/control-plane-
 ```
